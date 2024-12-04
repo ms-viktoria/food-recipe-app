@@ -6,7 +6,6 @@ import Home from "./pages/home";
 import Favorites from "./pages/favorites";
 import Details from "./pages/details";
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>

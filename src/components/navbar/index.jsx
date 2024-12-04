@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 import { GlobalContext } from "../../context";
 
 export default function Navbar() {
-  const {searchParam, setSearchParam, handleSubmit} = useContext(GlobalContext);
+  const { searchParam, setSearchParam, handleSubmit } =
+    useContext(GlobalContext);
 
   console.log(searchParam);
-  
-  
+
   return (
     <nav className="flex justify-between items-center py-8 container mx-auto flex-col lg:flex-row gap-5 lg:gap-0">
       <h2 className="text-2xl font-semibold">
@@ -37,7 +37,7 @@ export default function Navbar() {
             to={"/favorites"}
             className="text-black hover:text-gray-700 duration-300"
           >
-            Favorites
+            favorites
           </NavLink>
         </li>
       </ul>
